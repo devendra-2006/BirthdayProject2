@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><a href="file:///D:/Birthday/program/birthday%20wishes%203.html">
+    <button style="margin-top: 20px; padding: 10px 20px; background-color: #ff2c59; color: white; border: none; border-radius: 5px; font-size: 16px; cursor: pointer;">
+      🎮 Take the Birthday Quiz!
+    </button>
+  </a>
+  
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday Bhavya!</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: url('https://i.imgur.com/y2yOVX4.jpg') no-repeat center center fixed; /* anime café background */
+      background-size: cover;
+      font-family: 'Segoe UI', sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      color: #3e2723;
+    }
+
+    .container {
+      background-color: rgba(255, 248, 220, 0.85);
+      border: 2px solid #deb887;
+      padding: 30px;
+      border-radius: 15px;
+      text-align: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.3);
+      max-width: 500px;
+      width: 90%;
+    }
+
+    h1 {
+      color: #d2691e;
+      font-size: 2.5em;
+      margin-bottom: 15px;
+    }
+
+    img {
+      width: 280px;
+      height: auto;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.2);
+      margin: 20px 0;
+    }
+
+    p {
+      font-size: 1.1em;
+      font-style: italic;
+      color: #5d4037;
+    }
+
+    button {
+      background-color: #d2691e;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+
+    button:hover {
+      background-color: #a0522d;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>☕ Happy Café Birthday, Bhavya! 🍰</h1>
+    <img id="birthdayImage" src="D:/Birthday/Photos/Screenshot_20241108_075732_Instagram.jpg" alt="Cafe Bhavya">
+    <p id="wishMessage">Wishing you a warm cup of joy and a slice of happiness today!</p>
+    <button id="newWishButton">Next Café Wish 🍩</button>
+  </div>
+
+  <script>
+    const wishes = [
+      "Wishing you a warm cup of joy and a slice of happiness today!",
+      "You’re the sweetest blend of kindness and charm — happy birthday!",
+      "Let your smile be as cozy as a café latte on a rainy day ☕",
+      "You deserve all the pastries and love this world has to offer 💕",
+      "Happy birthday to the cutest café regular in my heart!",
+      "Here’s a toast (and some toast) to your amazing soul 🥐",
+      "You're the sugar in everyone's tea — have a sweet birthday!",
+      "Like the perfect cup of coffee, you make everything better."
+    ];
+
+    const images = [
+      "D:/Birthday/Photos/IMG_20241108_075707_372.jpg",
+      "D:/Birthday/Photos/IMG_20241108_154918_020.jpg",
+      "D:/Birthday/Photos/Screenshot_20241108_081352_Instagram.jpg",
+      "D:/Birthday/Photos/Screenshot_20241108_081348_Instagram.jpg",
+      "D:/Birthday/Photos/Screenshot_20241108_081551_Instagram.jpg",
+      "D:/Birthday/Photos/Screenshot_20241108_081601_Instagram.jpg",
+      "D:/Birthday/Photos/Screenshot_20241127_154020_Instagram.jpg",
+      "D:/Birthday/Photos/Screenshot_20241108_081601_Instagram.jpg"
+    ];
+
+    document.getElementById('newWishButton').addEventListener('click', function () {
+      const index = Math.floor(Math.random() * wishes.length);
+      document.getElementById('wishMessage').innerText = wishes[index];
+      document.getElementById('birthdayImage').src = images[index];
+    });
+  </script>
+</body>
+</html>

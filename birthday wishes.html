@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Wishes</title>
+    <style>
+        body {
+            background-color: #f0f8ff;
+            font-family: 'Arial', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .container {
+            text-align: center;
+            border: 2px solid #ff69b4;
+            border-radius: 10px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #ff69b4;
+        }
+
+        img {
+            width: 300px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        button {
+            background-color: #ff69b4;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #ff1493;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday!</h1>
+        <img id="birthdayImage" src="D:/Birthday/Photos/Screenshot_20241108_075732_Instagram.jpg" alt="Birthday Girl">
+        <p id="wishMessage">Wishing you a day filled with love and cheer!</p>
+        <button id="newWishButton">Get a New Wish</button>
+    </div>
+    <script>
+        const wishes = [
+            "May your birthday be filled with sunshine and smiles, laughter and love.",
+            "Wishing you a year filled with the same joy you bring to others.",
+            "Happy Birthday! May your day be as special as you are.",
+            "Cheers to you on your birthday! May it be filled with happiness and love.",
+            "On your special day, I wish you all the happiness in the world!",
+            "Happy Birthday! Enjoy your day to the fullest!",
+            "May your birthday be the start of a year filled with good luck, good health, and much happiness.",
+            "Wishing you a day that’s as special as you are!"
+        ];
+
+        const images = [
+           "D:/Birthday/Photos/IMG_20241108_075707_372.jpg",
+           "D:/Birthday/Photos/IMG_20241108_154918_020.jpg",
+           "D:/Birthday/Photos/Screenshot_20241108_081352_Instagram.jpg",
+           "D:/Birthday/Photos/Screenshot_20241108_081348_Instagram.jpg",
+           "D:/Birthday/Photos/Screenshot_20241108_081551_Instagram.jpg",
+           "D:/Birthday/Photos/Screenshot_20241108_081601_Instagram.jpg",
+           "D:/Birthday/Photos/Screenshot_20241127_154020_Instagram.jpg",
+           "D:/Birthday/Photos/Screenshot_20241108_081601_Instagram.jpg"
+         ];
+
+        document.getElementById('newWishButton').addEventListener('click', function() {
+            const randomIndex = Math.floor(Math.random() * wishes.length);
+            document.getElementById('wishMessage').innerText = wishes[randomIndex];
+            document.getElementById('birthdayImage').src = images[randomIndex];
+        });
+    </script>
+</body>
+</html>

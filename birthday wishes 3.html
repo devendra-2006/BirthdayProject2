@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bhavya's Birthday Quiz</title>
+  <style>
+    body {
+      background-color: #0d0d0d;
+      font-family: 'Arial', sans-serif;
+      color: #f5f5f5;
+      padding: 30px;
+    }
+
+    .container {
+      max-width: 600px;
+      margin: auto;
+      background-color: #1a1a1a;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 15px #ff2c59;
+    }
+
+    h2 {
+      color: #ff2c59;
+      text-align: center;
+    }
+
+    label {
+      display: block;
+      margin: 15px 0 5px;
+    }
+
+    input[type="radio"], textarea {
+      margin-top: 5px;
+    }
+
+    textarea {
+      width: 100%;
+      height: 80px;
+      margin-top: 10px;
+      background: #333;
+      color: #fff;
+      border: 1px solid #555;
+      border-radius: 5px;
+    }
+
+    button {
+      background-color: #ff2c59;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      display: block;
+      margin: 20px auto 0;
+    }
+
+    button:hover {
+      background-color: #ff4d6d;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <h2>🎉 Bhavya's Birthday Quiz 🎉</h2>
+  <form action="https://formspree.io/f/manoqjra" method="POST">
+    
+    <!-- Question 1 -->
+    <label>1. What's Bhavya's favorite color?</label>
+    <input type="radio" name="fav_color" value="Pink"> Pink<br>
+    <input type="radio" name="fav_color" value="Blue"> Blue<br>
+    <input type="radio" name="fav_color" value="Black"> Black<br>
+    <input type="radio" name="fav_color" value="Purple"> Purple<br>
+
+    <!-- Question 2 -->
+    <label>2. Which anime best describes her vibe?</label>
+    <input type="radio" name="anime_vibe" value="Demon Slayer"> Demon Slayer<br>
+    <input type="radio" name="anime_vibe" value="Tokyo Ghoul"> Tokyo Ghoul<br>
+    <input type="radio" name="anime_vibe" value="Your Name"> Your Name<br>
+    <input type="radio" name="anime_vibe" value="Death Note"> Death Note<br>
+
+    <!-- Question 3 -->
+    <label>3. Anythig You Want to Say...? 💌</label>
+    <textarea name="review_message" placeholder="Write your wishes here..."></textarea>
+
+    <!-- Submit -->
+    <button type="submit" onclick="file:///D:/Birthday/program/birthday%20wishes%202.html">Send My Answers 💌</button>
+  </form>
+</div>
+
+</body>
+</html>
